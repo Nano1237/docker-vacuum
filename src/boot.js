@@ -25,10 +25,10 @@ const env = envalid.cleanEnv(process.env, {
       'silly',
     ],
   }),
-  VACUUM_DELAY: envalid.num({ default: 600000 }),
+  VACUUM_DELAY: envalid.num({ default: 0 }),
   VACUUM_INTERVAL: envalid.num({ default: 600000 }),
   VACUUM_RULES: envalid.json({
-    default: '[{ "match": "(.*)", "retain": 2 }]',
+    default: '[{ "match": "(.*)", "retain": 0 }]',
   }),
   VACUUM_SYSTEM_PRUNE: envalid.bool({ default: false }),
   VACUUM_SYSTEM_PRUNE_VOLUMES: envalid.bool({ default: false }),

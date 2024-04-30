@@ -108,7 +108,7 @@ RUN set -eux; \
 ENV NODE_ENV production
 ENV LOG_LEVEL info
 ENV VACUUM_INTERVAL 600000
-ENV VACUUM_RULES "[{\"match\":\"(.*)\",\"retain\":2}]"
+ENV VACUUM_RULES "[{\"match\":\"(.*)\",\"retain\":0}]"
 
 WORKDIR /usr/src/app
 CMD node src/boot.js
