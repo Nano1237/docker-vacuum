@@ -15,7 +15,7 @@ const findDistinctImages = (lines) => {
 
 const matchRules = (rules, repositories) => {
   const results = [];
-
+  console.log(rules);
   rules.forEach((rule) => {
     const regexp = new RegExp(rule.match);
 
